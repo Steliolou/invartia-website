@@ -1,82 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVARTIA</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #111827;
-      color: #e5e7eb;
-      line-height: 1.6;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INVARTIA</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #1a1d2b;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #1a1d2b;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  header img {
+    width: 120px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  header h1 {
+    color: #4fc3f7;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    font-size: 1.1rem;
+    color: #b0bec5;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #22263a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  h2 {
+    color: #4fc3f7;
+  }
+  footer {
+    background-color: #0f111b;
+    color: #90a4ae;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+  a {
+    color: #4fc3f7;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+    /* Στυλ για τις Νέες Ενότητες (Services) */
+    #services {
+        padding: 40px 0; /* Λίγο περισσότερο χώρο */
+        text-align: center;
     }
-    header {
-      background-color: #1f2937;
-      text-align: center;
-      padding: 3rem 1rem;
+    
+    #services h2 {
+        font-size: 2em; 
+        margin-bottom: 30px;
+        color: #4fc3f7; /* Χρησιμοποιούμε το ίδιο μπλε χρώμα */
     }
-    header img {
-      height: 160px;
-      margin-bottom: 1rem;
+    
+    .service-category {
+        max-width: 800px;
+        margin: 20px auto; 
+        padding: 25px;
+        border: 1px solid #33394d; /* Πιο διακριτικό περίγραμμα */
+        border-radius: 8px; 
+        text-align: left; 
+        background-color: #272c41; /* Ελαφρώς πιο ανοιχτό φόντο */
     }
-    header p {
-      font-size: 1.2rem;
-      color: #9ca3af;
+    
+    .service-category h3 {
+        font-size: 1.5em;
+        color: #4fc3f7; 
+        margin-bottom: 10px;
+        border-bottom: 1px solid #4fc3f7; 
+        padding-bottom: 5px;
     }
-    main {
-      width: 100%;
-      background-color: #2d3748;
-      padding: 3rem 1rem;
-      box-sizing: border-box;
+    
+    .service-category p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #e0e0e0;
     }
-    .content {
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #38bdf8;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      background-color: #0f111b;
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
-  </style>
+</style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Invartia Logo" />
-    <p>Providing smart solutions in a connected smart world</p>
-  </header>
+  <header>
+    <img src="Screenshot (74).png" alt="Invartia Logo">
+    <h1>INVARTIA</h1>
+    <p>Providing smart solutions in a connected smart world</p>
+  </header>
 
-  <main>
-    <div class="content">
-      <h2>About Invartia</h2>
-      <p>
-        We understand the rapidly evolving landscape of the energy industry and the complex challenges faced by businesses striving for growth and sustainability.
-        We are dedicated to providing strategic guidance, innovative solutions, and actionable insights that empower our clients to navigate this dynamic environment successfully.
-      </p>
-      <p>
-        Our holistic approach combines deep industry knowledge, data-driven analysis, and a keen understanding of market trends to develop comprehensive strategies that drive tangible results.
-      </p>
+  <main>
+    <section>
+      <h2>About Invartia</h2>
+      <p>We understand the rapidly evolving landscape of the energy industry and the complex challenges faced by businesses striving for growth and sustainability. We are dedicated to providing strategic guidance, innovative solutions, and actionable insights that empower our clients to navigate this dynamic environment successfully.</p>
+      <p>Our holistic approach combines deep industry knowledge, data-driven analysis, and a keen understanding of market trends to develop comprehensive strategies that drive tangible results.</p>
+    </section>
 
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@invartia.com">info@invartia.com</a></p>
-      <p>Phone: +30 694 824 4392</p>
-      <p>Address: 40 Ellinikis Dimokratias St, 19003 Markopoulo, Attica, Greece</p>
-    </div>
-  </main>
+<section id="services">
+        <h2>Our Services</h2>
+        
+        <div class="service-category">
+            <h3>Energy Services</h3>
+            <p>In financing (debt & equity), we connect clients with international investors, prepare fundraising materials, and support outreach, negotiation, and structuring across debt, equity, mezzanine, and bridge options. We also provide market analysis, project development, regulatory guidance, and full-cycle support for energy strategy and execution. We offer due diligence services, virtual data rooms, and stakeholder information to ensure smooth transactions.</p>
+        </div>
 
-  <footer>
-    © 2025 INVARTIA. All rights reserved.
-  </footer>
+        <div class="service-category">
+            <h3>Business Development</h3>
+            <p>We help organizations identify growth opportunities, improve operations, and build sustainable long-term profitability through tailored business development strategies.</p>
+        </div>
+
+        <div class="service-category">
+            <h3>Silver Economy</h3>
+            <p>We offer specialized training on communication with senior citizens and support professional development through Caretaker Certification programs.</p>
+        </div>
+
+    </section>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@invartia.com">info@invartia.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 INVARTIA. All rights reserved.</p>
+  </footer>
 </body>
 </html>
